@@ -1,15 +1,15 @@
 schemaVersion: "1.2"
 endpoints:
   - name: rest-api-be
-  displayName: REST API
-  service:
-    basepath: /
-    port: 8000
-  type: REST
-  networkVisibilities:
-    - Project
-    - Public
+    displayName: REST API
+    service:
+      basepath: /
+      port: 8000
+    type: REST
+    networkVisibilities:
+      - Project
+      - Public
 dependencies:
-    connectionReferences:
+  connectionReferences:
     - name: OpenAI Connection
       resourceRef: thirdparty:OpenAi/v1
